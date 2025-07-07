@@ -8,15 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Selecione a Unidade Condensadora (R134a)</h1>
+        <h1>Selecione a Unidade Condensadora</h1>
         <p class="disclaimer">Esta é uma simplificação do catálogo da Danfoss para seleção de unidades condensadoras. Para mais informações, acesse <a href="https://www.danfoss.com/pt-br/products/dcs/condensing-units/optyma-condensing-units/condensing-units/" target="_blank">danfoss.com</a>.</p>
+
+        <div class="input-group">
+            <label for="refrigerant">Fluido Refrigerante:</label>
+            <select id="refrigerant">
+                <option value="R134a">-5°C (R134a)</option>
+                <option value="R404A">-25°C (R404A)</option>
+            </select>
+        </div>
 
         <div class="input-group">
             <label for="ambientTemp">Temperatura Ambiente (°C):</label>
             <select id="ambientTemp">
-                <option value="32">32°C</option>
-                <option value="35">35°C</option>
-            </select>
+                </select>
         </div>
 
         <div class="input-group">
