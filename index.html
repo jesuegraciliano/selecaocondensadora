@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Unidade Condensadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selecione a Unidade Condensadora (R134a)</h1>
+        <p class="disclaimer">Esta é uma simplificação do catálogo da Danfoss para seleção de unidades condensadoras. Para mais informações, acesse <a href="https://www.danfoss.com/pt-br/products/dcs/condensing-units/optyma-condensing-units/condensing-units/" target="_blank">danfoss.com</a>.</p>
+
+        <div class="input-group">
+            <label for="ambientTemp">Temperatura Ambiente (°C):</label>
+            <select id="ambientTemp">
+                <option value="32">32°C</option>
+                <option value="35">35°C</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="thermalLoadCC">Carga Térmica (CC em kcal/h):</label>
+            <input type="number" id="thermalLoadCC" placeholder="Ex: 2500" step="any">
+        </div>
+
+        <button id="calculateBtn">Calcular Modelo</button>
+
+        <div class="result">
+            <p>Modelo Sugerido: <span id="suggestedModel"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
