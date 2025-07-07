@@ -16,7 +16,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
-    max-width: 450px; /* Aumentado ligeiramente para acomodar o disclaimer */
+    max-width: 450px;
 }
 
 h1 {
@@ -60,7 +60,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    box-sizing: border-box; /* Garante que padding não aumente a largura total */
+    box-sizing: border-box;
 }
 
 button {
